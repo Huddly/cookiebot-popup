@@ -1,0 +1,81 @@
+.hcb-dialog {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	max-height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-top: em-calc(1) solid $cb-color-border;
+	background-color: $cb-color-white;
+
+	&--details-open {
+		box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+	}
+
+	&__row {
+		@media screen and (min-width: $cb-desktop-breakpoint) {
+			flex-direction: row-reverse;
+			align-items: center;
+		}
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		max-width: $cb-container-width;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	&__column {
+		@include gutter();
+		margin-top: em-calc(23);
+		margin-bottom: em-calc(23);
+	}
+
+	&__options {
+		flex-shrink: 0;
+
+		&__buttons {
+			@media screen and (min-width: $cb-desktop-breakpoint) {
+				display: flex;
+			}
+			display: grid;
+			grid-template-columns: auto minmax(0, 1fr);
+			align-items: center;
+			width: fit-content;
+			margin-bottom: em-calc(43);
+			gap: em-calc(20);
+		}
+
+		&__toggles {
+			@media screen and (min-width: $cb-desktop-breakpoint) {
+				display: flex;
+			}
+			display: grid;
+			grid-template-columns: auto minmax(0, 1fr);
+			align-items: center;
+			width: fit-content;
+			gap: em-calc(16 32);
+		}
+	}
+
+	&__content {
+		@media screen and (min-width: $cb-desktop-breakpoint) {
+			$separator-gap: em-calc(58);
+			margin-left: calc(#{$separator-gap} - #{$cb-gutter-width});
+			padding-left: $separator-gap;
+			border-left: em-calc(1) solid $cb-color-border;
+		}
+
+		&__title {
+			margin: 0 0 em-calc(8) 0;
+			font-size: em-calc(28);
+		}
+
+		&__text {
+			margin: 0;
+			color: $cb-color-gray;
+		}
+	}
+}

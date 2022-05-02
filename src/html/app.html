@@ -1,0 +1,127 @@
+<!--
+    This template is used in the cookiebot template.
+    It is placed in the admin panel.
+-->
+
+<div id="cookiebanner" class="hcb-dialog" role="alertdialog" aria-modal="true" aria-labelledby="HuddlyCookiebotAlertBoxTitle"
+	aria-describedby="HuddlyCookiebotAlertBoxMessage">
+
+	<div class="hcb-dialog__row">
+		<div class="hcb-dialog__column hcb-dialog__content">
+			<h3 id="HuddlyCookiebotAlertBoxTitle" class="hcb-dialog__content__title">[#TITLE#]</h3>
+			<p id="HuddlyCookiebotAlertBoxMessage" class="hcb-dialog__content__text">[#TEXT#]</p>
+		</div>
+
+
+
+		<div class="hcb-dialog__column hcb-dialog__options">
+			<div class="hcb-dialog__options__buttons">
+				<button id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll" class="hcb-button">[#LEVELOPTIN_ALLOWALL#]</button>
+				<button id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection"
+					class="hcb-button hcb-button--secondary">[#LEVELOPTIN_ALLOW_SELECTION#]</button>
+				<button data-toggle-details-modal id="HuddlyCookiebotListToggle" class="hcb-link" aria-label="Open details modal">[#DETAILS#]</button>
+			</div>
+
+			<div id="cookiebannerDetails" class="hcb-details" style="display: none" dialog aria-modal="true" aria-labelledby="HuddlyCookiebotDetailsTitle"
+				aria-describedby="HuddlyCookiebotDetailsMessage">
+
+				<header class="hcb-details__header">
+					<h3 class="hcb-details__header__title">[#ABOUTCOOKIES#]</h3>
+					<button data-toggle-details-modal class="hcb-accordion-button hcb-accordion-button--active" title="Close details modal"></button>
+				</header>
+
+				<div class="hcb-details__content">
+					<div class="hcb-details__content__section hcb-details__content__section__static">
+						<div class="hcb-details__content__section__header">
+							<h4 id="HuddlyCookiebotDetailsTitle" class="hcb-details__content__section__title">[#ABOUTCOOKIES#]</h4>
+							<p id="HuddlyCookiebotDetailsMessage" class="hcb-details__content__section__text">[#COOKIESGENERALINTRO#]</p>
+						</div>
+					</div>
+
+					<div class="hcb-details__content__section">
+						<div class="hcb-details__content__section__header">
+							<h4 id="HuddlyCookiebotDetailsTitle" class="hcb-details__content__section__title">[#COOKIETYPE_NECESSARY_RAW#]</h4>
+							<button data-accordion-toggle="necessary" class="hcb-accordion-button" title="Toggle [#COOKIETYPE_NECESSARY_RAW#] accordion"
+								aria-label="Accordion Control Button Group"></button>
+							<p id="HuddlyCookiebotDetailsMessage" class="hcb-details__content__section__text">[#COOKIETYPEINTRO_NECESSARY#]</p>
+						</div>
+						<div data-accordion="necessary" class="hcb-details__content__section__accordion" style="display: none" aria-hidden="true">
+							[#COOKIETABLE_NECESSARY#]
+						</div>
+					</div>
+
+					<div class="hcb-details__content__section">
+						<div class="hcb-details__content__section__header">
+							<h4 id="HuddlyCookiebotDetailsTitle" class="hcb-details__content__section__title">[#COOKIETYPE_PREFERENCE_RAW#]</h4>
+							<button data-accordion-toggle="preference" class="hcb-accordion-button" title="Toggle [#COOKIETYPE_PREFERENCE_RAW#] accordion"
+								aria-label="Accordion Control Button Group"></button>
+							<p id="HuddlyCookiebotDetailsMessage" class="hcb-details__content__section__text">[#COOKIETYPEINTRO_PREFERENCE#]</p>
+						</div>
+						<div data-accordion="preference" class="hcb-details__content__section__accordion" style="display: none" aria-hidden="true">
+							[#COOKIETABLE_PREFERENCE#]
+						</div>
+					</div>
+
+					<div class="hcb-details__content__section">
+						<div class="hcb-details__content__section__header">
+							<h4 id="HuddlyCookiebotDetailsTitle" class="hcb-details__content__section__title">[#COOKIETYPE_STATISTICS_RAW#]</h4>
+							<button data-accordion-toggle="statistics" class="hcb-accordion-button" title="Toggle [#COOKIETYPE_STATISTICS_RAW#] accordion"
+								aria-label="Accordion Control Button Group"></button>
+							<p id="HuddlyCookiebotDetailsMessage" class="hcb-details__content__section__text">[#COOKIETYPEINTRO_STATISTICS#]</p>
+						</div>
+						<div data-accordion="statistics" class="hcb-details__content__section__accordion" style="display: none" aria-hidden="true">
+							[#COOKIETABLE_STATISTICS#]
+						</div>
+					</div>
+
+					<div class="hcb-details__content__section">
+						<div class="hcb-details__content__section__header">
+							<h4 id="HuddlyCookiebotDetailsTitle" class="hcb-details__content__section__title">[#COOKIETYPE_ADVERTISING_RAW#]</h4>
+							<button data-accordion-toggle="advertising" class="hcb-accordion-button" title="Toggle [#COOKIETYPE_ADVERTISING_RAW#] accordion"
+								aria-label="Accordion Control Button Group"></button>
+							<p id="HuddlyCookiebotDetailsMessage" class="hcb-details__content__section__text">[#COOKIETYPEINTRO_ADVERTISING#]</p>
+						</div>
+						<div data-accordion="advertising" class="hcb-details__content__section__accordion" style="display: none" aria-hidden="true">
+							[#COOKIETABLE_ADVERTISING#]
+						</div>
+					</div>
+
+					<div class="hcb-details__content__section">
+						<div class="hcb-details__content__section__header">
+							<h4 id="HuddlyCookiebotDetailsTitle" class="hcb-details__content__section__title">[#COOKIETYPE_UNCLASSIFIED_RAW#]</h4>
+							<button data-accordion-toggle="unclassified" class="hcb-accordion-button" title="Toggle [#COOKIETYPE_UNCLASSIFIED_RAW#] accordion"
+								aria-label="Accordion Control Button Group"></button>
+							<p id="HuddlyCookiebotDetailsMessage" class="hcb-details__content__section__text">[#COOKIETYPEINTRO_UNCLASSIFIED#]</p>
+						</div>
+						<div data-accordion="unclassified" class="hcb-details__content__section__accordion" style="display: none" aria-hidden="true">
+							[#COOKIETABLE_UNCLASSIFIED#]
+						</div>
+					</div>
+				</div>
+
+				<footer class="hcb-details__footer">
+					<button data-toggle-details-modal class="hcb-button">[#HIDE_DETAILS#]</button>
+				</footer>
+			</div>
+
+			<div class="hcb-dialog__options__toggles">
+				<div class="hcb-toggle-group">
+					<input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessary" checked disabled />
+					<label for="CybotCookiebotDialogBodyLevelButtonNecessary">[#COOKIETYPE_NECESSARY_RAW#]</label>
+				</div>
+				<div class="hcb-toggle-group">
+					<input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferences" />
+					<label for="CybotCookiebotDialogBodyLevelButtonPreferences">[#COOKIETYPE_PREFERENCE_RAW#]</label>
+				</div>
+				<div class="hcb-toggle-group">
+					<input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" />
+					<label for="CybotCookiebotDialogBodyLevelButtonStatistics">[#COOKIETYPE_STATISTICS_RAW#]</label>
+				</div>
+				<div class="hcb-toggle-group">
+					<input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketing" />
+					<label for="CybotCookiebotDialogBodyLevelButtonMarketing">[#COOKIETYPE_ADVERTISING_RAW#]</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

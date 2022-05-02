@@ -1,0 +1,1193 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huddly cookiebot dialog preview</title>
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="999ba042-99ea-41c3-9c35-d2932045089a"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="/build/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+  </head>
+  <body>
+    <h1>Huddly cookiebot dialog preview</h1>
+    <!--
+    This template is used in the cookiebot template.
+    It is placed in the admin panel.
+-->
+
+    <div
+      id="cookiebanner"
+      class="hcb-dialog"
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="HuddlyCookiebotAlertBoxTitle"
+      aria-describedby="HuddlyCookiebotAlertBoxMessage"
+    >
+      <div class="hcb-dialog__row">
+        <div class="hcb-dialog__column hcb-dialog__content">
+          <h3
+            id="HuddlyCookiebotAlertBoxTitle"
+            class="hcb-dialog__content__title"
+          >
+            This website uses cookies
+          </h3>
+          <p
+            id="HuddlyCookiebotAlertBoxMessage"
+            class="hcb-dialog__content__text"
+          >
+            We use cookies to personalise content and ads, to provide social
+            media features and to analyse our traffic. We also share information
+            about your use of our site with our social media, advertising and
+            analytics partners who may combine it with other information that
+            you’ve provided to them or that they’ve collected from your use of
+            their services.
+          </p>
+        </div>
+
+        <div class="hcb-dialog__column hcb-dialog__options">
+          <div class="hcb-dialog__options__buttons">
+            <button
+              id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"
+              class="hcb-button"
+            >
+              Allow all
+            </button>
+            <button
+              id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection"
+              class="hcb-button hcb-button--secondary"
+            >
+              Allow selection
+            </button>
+            <button
+              data-toggle-details-modal
+              id="HuddlyCookiebotListToggle"
+              class="hcb-link"
+              aria-label="Open details modal"
+            >
+              Show details
+            </button>
+          </div>
+
+          <div
+            id="cookiebannerDetails"
+            class="hcb-details"
+            style="display: none"
+            dialog
+            aria-modal="true"
+            aria-labelledby="HuddlyCookiebotDetailsTitle"
+            aria-describedby="HuddlyCookiebotDetailsMessage"
+          >
+            <header class="hcb-details__header">
+              <h3 class="hcb-details__header__title">About cookies</h3>
+              <button
+                data-toggle-details-modal
+                class="hcb-accordion-button hcb-accordion-button--active"
+                title="Close details modal"
+              ></button>
+            </header>
+
+            <div class="hcb-details__content">
+              <div
+                class="hcb-details__content__section hcb-details__content__section__static"
+              >
+                <div class="hcb-details__content__section__header">
+                  <h4
+                    id="HuddlyCookiebotDetailsTitle"
+                    class="hcb-details__content__section__title"
+                  >
+                    About cookies
+                  </h4>
+                  <p
+                    id="HuddlyCookiebotDetailsMessage"
+                    class="hcb-details__content__section__text"
+                  >
+                    Cookies are small text files that can be used by websites to
+                    make a user's experience more efficient. The law states that
+                    we can store cookies on your device if they are strictly
+                    necessary for the operation of this site. For all other
+                    types of cookies we need your permission. This site uses
+                    different types of cookies. Some cookies are placed by third
+                    party services that appear on our pages. You can at any time
+                    change or withdraw your consent from the Cookie Declaration
+                    on our website. Learn more about who we are, how you can
+                    contact us and how we process personal data in our Privacy
+                    Policy. Please state your consent ID and date when you
+                    contact us regarding your consent.
+                  </p>
+                </div>
+              </div>
+
+              <div class="hcb-details__content__section">
+                <div class="hcb-details__content__section__header">
+                  <h4
+                    id="HuddlyCookiebotDetailsTitle"
+                    class="hcb-details__content__section__title"
+                  >
+                    Necessary
+                  </h4>
+                  <button
+                    data-accordion-toggle="necessary"
+                    class="hcb-accordion-button"
+                    title="Toggle Necessary accordion"
+                    aria-label="Accordion Control Button Group"
+                  ></button>
+                  <p
+                    id="HuddlyCookiebotDetailsMessage"
+                    class="hcb-details__content__section__text"
+                  >
+                    Necessary cookies help make a website usable by enabling
+                    basic functions like page navigation and access to secure
+                    areas of the website. The website cannot function properly
+                    without these cookies.
+                  </p>
+                </div>
+                <div
+                  data-accordion="necessary"
+                  class="hcb-details__content__section__accordion"
+                  style="display: none"
+                  aria-hidden="true"
+                >
+                  <table
+                    id="CybotCookiebotDialogDetailTableNecessary"
+                    class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"
+                  >
+                    <thead>
+                      <tr>
+                        <th scope="col">Navn</th>
+                        <th scope="col">Leverandør</th>
+                        <th scope="col">Hensikt</th>
+                        <th scope="col">Utløpsdato</th>
+                        <th scope="col">Type</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td title="CONSENT">CONSENT&nbsp;[x2]</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          ><br /><a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="YouTubes personvern"
+                            >YouTube</a
+                          >
+                        </td>
+                        <td
+                          title="Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  "
+                        >
+                          Used to detect if the visitor has accepted the
+                          marketing category in the cookie banner. This cookie
+                          is necessary for GDPR-compliance of the website.
+                        </td>
+                        <td title="2 år">2 år</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::a">rc::a</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots. This is beneficial for the website, in order to
+                          make valid reports on the use of their website.
+                        </td>
+                        <td title="Persistent">Persistent</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::b">rc::b</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. "
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::c">rc::c</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. "
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="_grecaptcha">_grecaptcha</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots. This is beneficial for the website, in order to
+                          make valid reports on the use of their website.
+                        </td>
+                        <td title="Persistent">Persistent</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="CookieConsent">CookieConsent</td>
+                        <td>
+                          <a
+                            href="https://www.cookiebot.com/goto/privacy-policy/"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Cookiebots personvern"
+                            >Cookiebot</a
+                          >
+                        </td>
+                        <td
+                          title="Stores the user's cookie consent state for the current domain"
+                        >
+                          Stores the user's cookie consent state for the current
+                          domain
+                        </td>
+                        <td title="1 år">1 år</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="wordpress_test_cookie">
+                          wordpress_test_cookie
+                        </td>
+                        <td>www.kraftriket.no</td>
+                        <td
+                          title="Used to check if the user's browser supports cookies."
+                        >
+                          Used to check if the user's browser supports cookies.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="JSESSIONID">JSESSIONID&nbsp;[x2]</td>
+                        <td>services.itxuc.com<br />services21.itxuc.com</td>
+                        <td
+                          title="Preserves users states across page requests."
+                        >
+                          Preserves users states across page requests.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="hcb-details__content__section">
+                <div class="hcb-details__content__section__header">
+                  <h4
+                    id="HuddlyCookiebotDetailsTitle"
+                    class="hcb-details__content__section__title"
+                  >
+                    Preferences
+                  </h4>
+                  <button
+                    data-accordion-toggle="preference"
+                    class="hcb-accordion-button"
+                    title="Toggle Preferences accordion"
+                    aria-label="Accordion Control Button Group"
+                  ></button>
+                  <p
+                    id="HuddlyCookiebotDetailsMessage"
+                    class="hcb-details__content__section__text"
+                  >
+                    Preference cookies enable a website to remember information
+                    that changes the way the website behaves or looks, like your
+                    preferred language or the region that you are in.
+                  </p>
+                </div>
+                <div
+                  data-accordion="preference"
+                  class="hcb-details__content__section__accordion"
+                  style="display: none"
+                  aria-hidden="true"
+                >
+                  <table
+                    id="CybotCookiebotDialogDetailTableNecessary"
+                    class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"
+                  >
+                    <thead>
+                      <tr>
+                        <th scope="col">Navn</th>
+                        <th scope="col">Leverandør</th>
+                        <th scope="col">Hensikt</th>
+                        <th scope="col">Utløpsdato</th>
+                        <th scope="col">Type</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td title="CONSENT">CONSENT&nbsp;[x2]</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          ><br /><a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="YouTubes personvern"
+                            >YouTube</a
+                          >
+                        </td>
+                        <td
+                          title="Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  "
+                        >
+                          Used to detect if the visitor has accepted the
+                          marketing category in the cookie banner. This cookie
+                          is necessary for GDPR-compliance of the website.
+                        </td>
+                        <td title="2 år">2 år</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::a">rc::a</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots. This is beneficial for the website, in order to
+                          make valid reports on the use of their website.
+                        </td>
+                        <td title="Persistent">Persistent</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::b">rc::b</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. "
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::c">rc::c</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. "
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="_grecaptcha">_grecaptcha</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots. This is beneficial for the website, in order to
+                          make valid reports on the use of their website.
+                        </td>
+                        <td title="Persistent">Persistent</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="CookieConsent">CookieConsent</td>
+                        <td>
+                          <a
+                            href="https://www.cookiebot.com/goto/privacy-policy/"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Cookiebots personvern"
+                            >Cookiebot</a
+                          >
+                        </td>
+                        <td
+                          title="Stores the user's cookie consent state for the current domain"
+                        >
+                          Stores the user's cookie consent state for the current
+                          domain
+                        </td>
+                        <td title="1 år">1 år</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="wordpress_test_cookie">
+                          wordpress_test_cookie
+                        </td>
+                        <td>www.kraftriket.no</td>
+                        <td
+                          title="Used to check if the user's browser supports cookies."
+                        >
+                          Used to check if the user's browser supports cookies.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="JSESSIONID">JSESSIONID&nbsp;[x2]</td>
+                        <td>services.itxuc.com<br />services21.itxuc.com</td>
+                        <td
+                          title="Preserves users states across page requests."
+                        >
+                          Preserves users states across page requests.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="hcb-details__content__section">
+                <div class="hcb-details__content__section__header">
+                  <h4
+                    id="HuddlyCookiebotDetailsTitle"
+                    class="hcb-details__content__section__title"
+                  >
+                    Statistics
+                  </h4>
+                  <button
+                    data-accordion-toggle="statistics"
+                    class="hcb-accordion-button"
+                    title="Toggle Statistics accordion"
+                    aria-label="Accordion Control Button Group"
+                  ></button>
+                  <p
+                    id="HuddlyCookiebotDetailsMessage"
+                    class="hcb-details__content__section__text"
+                  >
+                    Statistic cookies help website owners to understand how
+                    visitors interact with websites by collecting and reporting
+                    information anonymously.
+                  </p>
+                </div>
+                <div
+                  data-accordion="statistics"
+                  class="hcb-details__content__section__accordion"
+                  style="display: none"
+                  aria-hidden="true"
+                >
+                  <table
+                    id="CybotCookiebotDialogDetailTableNecessary"
+                    class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"
+                  >
+                    <thead>
+                      <tr>
+                        <th scope="col">Navn</th>
+                        <th scope="col">Leverandør</th>
+                        <th scope="col">Hensikt</th>
+                        <th scope="col">Utløpsdato</th>
+                        <th scope="col">Type</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td title="CONSENT">CONSENT&nbsp;[x2]</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          ><br /><a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="YouTubes personvern"
+                            >YouTube</a
+                          >
+                        </td>
+                        <td
+                          title="Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  "
+                        >
+                          Used to detect if the visitor has accepted the
+                          marketing category in the cookie banner. This cookie
+                          is necessary for GDPR-compliance of the website.
+                        </td>
+                        <td title="2 år">2 år</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::a">rc::a</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots. This is beneficial for the website, in order to
+                          make valid reports on the use of their website.
+                        </td>
+                        <td title="Persistent">Persistent</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::b">rc::b</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. "
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::c">rc::c</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. "
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="_grecaptcha">_grecaptcha</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots. This is beneficial for the website, in order to
+                          make valid reports on the use of their website.
+                        </td>
+                        <td title="Persistent">Persistent</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="CookieConsent">CookieConsent</td>
+                        <td>
+                          <a
+                            href="https://www.cookiebot.com/goto/privacy-policy/"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Cookiebots personvern"
+                            >Cookiebot</a
+                          >
+                        </td>
+                        <td
+                          title="Stores the user's cookie consent state for the current domain"
+                        >
+                          Stores the user's cookie consent state for the current
+                          domain
+                        </td>
+                        <td title="1 år">1 år</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="wordpress_test_cookie">
+                          wordpress_test_cookie
+                        </td>
+                        <td>www.kraftriket.no</td>
+                        <td
+                          title="Used to check if the user's browser supports cookies."
+                        >
+                          Used to check if the user's browser supports cookies.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="JSESSIONID">JSESSIONID&nbsp;[x2]</td>
+                        <td>services.itxuc.com<br />services21.itxuc.com</td>
+                        <td
+                          title="Preserves users states across page requests."
+                        >
+                          Preserves users states across page requests.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="hcb-details__content__section">
+                <div class="hcb-details__content__section__header">
+                  <h4
+                    id="HuddlyCookiebotDetailsTitle"
+                    class="hcb-details__content__section__title"
+                  >
+                    Marketing
+                  </h4>
+                  <button
+                    data-accordion-toggle="advertising"
+                    class="hcb-accordion-button"
+                    title="Toggle Marketing accordion"
+                    aria-label="Accordion Control Button Group"
+                  ></button>
+                  <p
+                    id="HuddlyCookiebotDetailsMessage"
+                    class="hcb-details__content__section__text"
+                  >
+                    Marketing cookies are used to track visitors across
+                    websites. The intention is to display ads that are relevant
+                    and engaging for the individual user and thereby more
+                    valuable for publishers and third party advertisers.
+                  </p>
+                </div>
+                <div
+                  data-accordion="advertising"
+                  class="hcb-details__content__section__accordion"
+                  style="display: none"
+                  aria-hidden="true"
+                >
+                  <table
+                    id="CybotCookiebotDialogDetailTableNecessary"
+                    class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"
+                  >
+                    <thead>
+                      <tr>
+                        <th scope="col">Navn</th>
+                        <th scope="col">Leverandør</th>
+                        <th scope="col">Hensikt</th>
+                        <th scope="col">Utløpsdato</th>
+                        <th scope="col">Type</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td title="CONSENT">CONSENT&nbsp;[x2]</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          ><br /><a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="YouTubes personvern"
+                            >YouTube</a
+                          >
+                        </td>
+                        <td
+                          title="Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  "
+                        >
+                          Used to detect if the visitor has accepted the
+                          marketing category in the cookie banner. This cookie
+                          is necessary for GDPR-compliance of the website.
+                        </td>
+                        <td title="2 år">2 år</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::a">rc::a</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots. This is beneficial for the website, in order to
+                          make valid reports on the use of their website.
+                        </td>
+                        <td title="Persistent">Persistent</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::b">rc::b</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. "
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::c">rc::c</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. "
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="_grecaptcha">_grecaptcha</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots. This is beneficial for the website, in order to
+                          make valid reports on the use of their website.
+                        </td>
+                        <td title="Persistent">Persistent</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="CookieConsent">CookieConsent</td>
+                        <td>
+                          <a
+                            href="https://www.cookiebot.com/goto/privacy-policy/"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Cookiebots personvern"
+                            >Cookiebot</a
+                          >
+                        </td>
+                        <td
+                          title="Stores the user's cookie consent state for the current domain"
+                        >
+                          Stores the user's cookie consent state for the current
+                          domain
+                        </td>
+                        <td title="1 år">1 år</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="wordpress_test_cookie">
+                          wordpress_test_cookie
+                        </td>
+                        <td>www.kraftriket.no</td>
+                        <td
+                          title="Used to check if the user's browser supports cookies."
+                        >
+                          Used to check if the user's browser supports cookies.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="JSESSIONID">JSESSIONID&nbsp;[x2]</td>
+                        <td>services.itxuc.com<br />services21.itxuc.com</td>
+                        <td
+                          title="Preserves users states across page requests."
+                        >
+                          Preserves users states across page requests.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="hcb-details__content__section">
+                <div class="hcb-details__content__section__header">
+                  <h4
+                    id="HuddlyCookiebotDetailsTitle"
+                    class="hcb-details__content__section__title"
+                  >
+                    Unclassified
+                  </h4>
+                  <button
+                    data-accordion-toggle="unclassified"
+                    class="hcb-accordion-button"
+                    title="Toggle Unclassified accordion"
+                    aria-label="Accordion Control Button Group"
+                  ></button>
+                  <p
+                    id="HuddlyCookiebotDetailsMessage"
+                    class="hcb-details__content__section__text"
+                  >
+                    Unclassified cookies are cookies that we are in the process
+                    of classifying, together with the providers of individual
+                    cookies.
+                  </p>
+                </div>
+                <div
+                  data-accordion="unclassified"
+                  class="hcb-details__content__section__accordion"
+                  style="display: none"
+                  aria-hidden="true"
+                >
+                  <table
+                    id="CybotCookiebotDialogDetailTableNecessary"
+                    class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"
+                  >
+                    <thead>
+                      <tr>
+                        <th scope="col">Navn</th>
+                        <th scope="col">Leverandør</th>
+                        <th scope="col">Hensikt</th>
+                        <th scope="col">Utløpsdato</th>
+                        <th scope="col">Type</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td title="CONSENT">CONSENT&nbsp;[x2]</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          ><br /><a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="YouTubes personvern"
+                            >YouTube</a
+                          >
+                        </td>
+                        <td
+                          title="Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  "
+                        >
+                          Used to detect if the visitor has accepted the
+                          marketing category in the cookie banner. This cookie
+                          is necessary for GDPR-compliance of the website.
+                        </td>
+                        <td title="2 år">2 år</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::a">rc::a</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots. This is beneficial for the website, in order to
+                          make valid reports on the use of their website.
+                        </td>
+                        <td title="Persistent">Persistent</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::b">rc::b</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. "
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="rc::c">rc::c</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. "
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="_grecaptcha">_grecaptcha</td>
+                        <td>
+                          <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Googles personvern"
+                            >Google</a
+                          >
+                        </td>
+                        <td
+                          title="This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+                        >
+                          This cookie is used to distinguish between humans and
+                          bots. This is beneficial for the website, in order to
+                          make valid reports on the use of their website.
+                        </td>
+                        <td title="Persistent">Persistent</td>
+                        <td title="HTML">HTML</td>
+                      </tr>
+                      <tr>
+                        <td title="CookieConsent">CookieConsent</td>
+                        <td>
+                          <a
+                            href="https://www.cookiebot.com/goto/privacy-policy/"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            title="Cookiebots personvern"
+                            >Cookiebot</a
+                          >
+                        </td>
+                        <td
+                          title="Stores the user's cookie consent state for the current domain"
+                        >
+                          Stores the user's cookie consent state for the current
+                          domain
+                        </td>
+                        <td title="1 år">1 år</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="wordpress_test_cookie">
+                          wordpress_test_cookie
+                        </td>
+                        <td>www.kraftriket.no</td>
+                        <td
+                          title="Used to check if the user's browser supports cookies."
+                        >
+                          Used to check if the user's browser supports cookies.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                      <tr>
+                        <td title="JSESSIONID">JSESSIONID&nbsp;[x2]</td>
+                        <td>services.itxuc.com<br />services21.itxuc.com</td>
+                        <td
+                          title="Preserves users states across page requests."
+                        >
+                          Preserves users states across page requests.
+                        </td>
+                        <td title="Session">Session</td>
+                        <td title="HTTP">HTTP</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <footer class="hcb-details__footer">
+              <button data-toggle-details-modal class="hcb-button">
+                Hide details
+              </button>
+            </footer>
+          </div>
+
+          <div class="hcb-dialog__options__toggles">
+            <div class="hcb-toggle-group">
+              <input
+                type="checkbox"
+                id="CybotCookiebotDialogBodyLevelButtonNecessary"
+                checked
+                disabled
+              />
+              <label for="CybotCookiebotDialogBodyLevelButtonNecessary"
+                >Necessary</label
+              >
+            </div>
+            <div class="hcb-toggle-group">
+              <input
+                type="checkbox"
+                id="CybotCookiebotDialogBodyLevelButtonPreferences"
+              />
+              <label for="CybotCookiebotDialogBodyLevelButtonPreferences"
+                >Preferences</label
+              >
+            </div>
+            <div class="hcb-toggle-group">
+              <input
+                type="checkbox"
+                id="CybotCookiebotDialogBodyLevelButtonStatistics"
+              />
+              <label for="CybotCookiebotDialogBodyLevelButtonStatistics"
+                >Statistics</label
+              >
+            </div>
+            <div class="hcb-toggle-group">
+              <input
+                type="checkbox"
+                id="CybotCookiebotDialogBodyLevelButtonMarketing"
+              />
+              <label for="CybotCookiebotDialogBodyLevelButtonMarketing"
+                >Marketing</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="/build/main.js"
+      type="text/javascript"
+      data-cookieconsent="ignore"
+    ></script>
+  </body>
+</html>

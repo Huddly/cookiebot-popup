@@ -1,0 +1,22 @@
+@mixin outline() {
+	outline-offset: em-calc(3);
+	&:focus {
+		outline: 1px dashed $cb-color-primary;
+	}
+}
+
+@mixin gutter($margin: false) {
+	@if ($margin == true) {
+		margin-right: $cb-gutter-width;
+		margin-left: $cb-gutter-width;
+	} @else {
+		padding-right: $cb-gutter-width;
+		padding-left: $cb-gutter-width;
+	}
+}
+
+@mixin svg-icon($data) {
+	background-image: url('#{$data}');
+	background-position: center;
+	background-repeat: no-repeat;
+}

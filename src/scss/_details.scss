@@ -1,0 +1,108 @@
+.hcb-details {
+	@media screen and (min-width: $cb-desktop-breakpoint) {
+		@include gutter(true);
+		position: fixed;
+		top: 0;
+		left: 50%;
+		max-width: em-calc(652);
+		padding: em-calc(32 38);
+		transform: translateX(-50%);
+	}
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	background-color: $cb-color-white;
+
+	&__header {
+		@media screen and (min-width: $cb-desktop-breakpoint) {
+			display: flex;
+		}
+		display: none;
+		align-items: baseline;
+		justify-content: space-between;
+		margin-bottom: em-calc(32);
+
+		&__title {
+			margin: 0;
+			font-size: em-calc(28);
+		}
+	}
+
+	&__content {
+		$gutter: em-calc(24);
+		@media screen and (min-width: $cb-desktop-breakpoint) {
+			background-color: $cb-color-gray-lightest;
+		}
+		position: relative;
+		height: auto;
+		margin-bottom: em-calc(42);
+		overflow-y: auto;
+
+		&__section {
+			display: grid;
+
+			&:not(:last-child) {
+				border-bottom: em-calc(1) solid $cb-color-border;
+			}
+
+			&__header {
+				@media screen and (min-width: $cb-desktop-breakpoint) {
+					padding: $gutter;
+					background-color: $cb-color-gray-lightest;
+				}
+				display: grid;
+				position: sticky;
+				top: 0;
+				grid-template-columns: 1fr auto;
+				padding: $gutter 0;
+				overflow: hidden;
+				column-gap: em-calc(32);
+			}
+
+			&__title {
+				margin-top: 0;
+				font-size: em-calc(18);
+			}
+
+			&__text {
+				grid-column: 1 / span 2;
+				margin: 0;
+				font-size: em-calc(15);
+			}
+
+			&__accordion {
+				@media screen and (min-width: $cb-desktop-breakpoint) {
+					width: calc(100% - #{$gutter});
+					margin: em-calc(16) calc(#{$gutter} / 2);
+					background-color: $cb-color-gray-light;
+				}
+				margin: em-calc(16 0);
+				overflow-x: auto;
+				background-color: $cb-color-gray-light;
+				will-change: display, height;
+			}
+		}
+
+		table {
+			width: max-content;
+			font-size: em-calc(15);
+			text-align: left;
+			table-layout: auto;
+
+			th,
+			td {
+				width: auto;
+				max-width: em-calc(300);
+				padding: em-calc(16) calc(#{$gutter} / 2);
+				vertical-align: top;
+			}
+		}
+	}
+
+	&__footer {
+		@media screen and (min-width: $cb-desktop-breakpoint) {
+			display: block;
+		}
+		display: none;
+	}
+}
