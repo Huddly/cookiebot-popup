@@ -3,11 +3,14 @@
 	"version": "1.0.1",
 	"description": "A custom dialog for cookiebot",
 	"main": "index.js",
-	"private": true,
 	"author": "Huddly AS",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/huddly/cookiebot-dialog.git"
+	},
+	"publishConfig": {
+		"access": "restricted",
+		"registry": "https://registry.npmjs.org/"
 	},
 	"scripts": {
 		"dev": "cross-env NODE_ENV=development run",
