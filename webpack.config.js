@@ -48,7 +48,17 @@ module.exports = (env) => {
 				}),
 			],
 			optimization: {
-				minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
+				minimizer: [
+					new TerserPlugin({
+						terserOptions: {
+							keep_classnames: true,
+							output: {
+								comments: false,
+							},
+						},
+					}),
+					new CssMinimizerPlugin(),
+				],
 			},
 		},
 	];

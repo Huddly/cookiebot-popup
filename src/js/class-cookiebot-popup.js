@@ -10,7 +10,9 @@ export default class CookiebotPopup {
 	init = () => {
 		const _this = this;
 
+		this.handleMissingHideDetailsLabel();
 		this.setModalHeight();
+
 		window.addEventListener('resize', () => {
 			this.setModalHeight();
 		});
@@ -34,6 +36,15 @@ export default class CookiebotPopup {
 				const modifierClass = _this.setModifierClass(target);
 				_this.setAriaState(target, modifierClass);
 			}
+		});
+	};
+
+	handleMissingHideDetailsLabel = () => {
+		const needle = '[#HIDE_DETAILS#]';
+		const replacement = CookiebotDialog.hideDetailsText;
+		this.cookiebanner.querySelectorAll('button').forEach((button) => {
+			if (button.innerHTML.indexOf(needle) < 0) return;
+			button.innerText = button.innerText.replace(needle, replacement);
 		});
 	};
 
