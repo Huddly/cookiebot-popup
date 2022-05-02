@@ -1,6 +1,6 @@
 {
 	"name": "@huddly/cookiebot-dialog",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A custom dialog for cookiebot",
 	"main": "index.js",
 	"private": true,
