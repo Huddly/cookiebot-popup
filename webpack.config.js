@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PreviewGeneratorPlugin = require('./plugins/preview-generator-plugin');
@@ -9,21 +10,19 @@ const entry = ['./src/js/app.js', './src/scss/app.scss'];
 module.exports = (env) => {
 	return [
 		{
-			entry: entry,
+			entry,
 			output: {
 				path: path.join(__dirname, outputDir),
-				filename: '[name].js',
+				filename: 'dialog.js',
 				publicPath: '/dist/',
 			},
+			target: ['web', 'es5'],
 			module: {
 				rules: [
 					{
 						test: /\.js$/,
+						exclude: /node_modules/,
 						use: 'babel-loader',
-					},
-					{
-						test: /\.css$/i,
-						use: [MiniCssExtractPlugin.loader, 'css-loader'],
 					},
 					{
 						test: /\.scss$/i,
@@ -33,23 +32,23 @@ module.exports = (env) => {
 			},
 			plugins: [
 				new MiniCssExtractPlugin({
-					filename: 'style.css',
+					filename: 'dialog.css',
 				}),
 				new HtmlWebpackPlugin({
 					inject: false,
 					template: 'src/html/app.html',
-					filename: '../artifacts/popup.html',
+					filename: '../artifacts/dialog.html',
 				}),
 				new PreviewGeneratorPlugin({
 					template: 'src/html/app.html',
 					filename: '../index.html',
 					title: 'Huddly cookiebot dialog preview',
-					styles: ['/dist/style.css', 'https://necolas.github.io/normalize.css/8.0.1/normalize.css'],
-					scripts: ['/dist/main.js'],
+					styles: ['/dist/dialog.css', 'https://necolas.github.io/normalize.css/8.0.1/normalize.css'],
+					scripts: ['/dist/dialog.js'],
 				}),
 			],
 			optimization: {
-				minimizer: [new CssMinimizerPlugin()],
+				minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
 			},
 		},
 	];

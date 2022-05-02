@@ -1,15 +1,18 @@
 import CookiebotPopup from './class-cookiebot-popup';
 
 function showCookieBanner() {
-	// cookiebanner.style.display = 'block';
-	console.log('showCookieBanner');
+	new CookiebotPopup().init();
+	cookiebanner.style.display = 'block';
 }
-
 function hideCookieBanner() {
-	// cookiebanner.style.display = 'none';
-	console.log('hideCookieBanner');
+	cookiebanner.style.display = 'none';
 }
 
 window.addEventListener('CookiebotOnDialogInit', () => {
-	new CookiebotPopup().init();
+	if ((process.env.NODE_ENV || '').trim() !== 'development') {
+		showCookieBanner();
+	}
 });
+
+window.showCookieBanner = showCookieBanner;
+window.hideCookieBanner = hideCookieBanner;
