@@ -37,7 +37,7 @@ module.exports = (env) => {
 				new HtmlWebpackPlugin({
 					inject: false,
 					template: 'src/html/app.html',
-					filename: '../artifacts/dialog.html',
+					filename: '../dist/dialog.html',
 				}),
 				new PreviewGeneratorPlugin({
 					template: 'src/html/app.html',
