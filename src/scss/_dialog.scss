@@ -10,6 +10,7 @@
 	overflow-y: auto;
 	border-top: em-calc(1) solid $cb-color-border;
 	background-color: $cb-color-white;
+	color: $cb-color-black;
 
 	&--details-open {
 		box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
