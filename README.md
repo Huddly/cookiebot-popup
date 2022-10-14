@@ -5,7 +5,7 @@
 Because Cookiebot doesn't support new CSS properties, you will manually need to include the css file in your project.
 
 ```bash
-npm install Huddly/frokost --save
+npm install Huddly/cookiebot-popup --save
 ```
 
 Then import the following styling in your project:
