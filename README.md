@@ -11,16 +11,16 @@ npm install Huddly/frokost --save
 Then import the following styling in your project:
 
 ```javascript
-import '@huddly/cookiebot-dialog/dist/dialog.css';
+import '@huddly/cookiebot-popup/dist/popup.css';
 ```
 
-In the same `@huddly/cookiebot-dialog/dist/` folder you will find the following files:
+In the same `@huddly/cookiebot-popup/dist/` folder you will find the following files:
 
--   `dialog.html`
--   `dialog.js`
+-   `popup.html`
+-   `popup.js`
 
-Paste the content of these into your cookiebot dialog setting fields after selecting the "Custom dialog" option.
+Paste the content of these into your cookiebot popup setting fields after selecting the "Custom popup" option.
 
-After this, your Cookiebot dialog should look like this:
+After this, your Cookiebot popup should look like this:
 
-![Huddly version of the Cookiebot dialog](https://user-images.githubusercontent.com/25268506/194106265-a51c0c4a-f571-4d16-b4ee-6c6822f00da2.png)
+![Huddly version of the Cookiebot popup](https://user-images.githubusercontent.com/25268506/194106265-a51c0c4a-f571-4d16-b4ee-6c6822f00da2.png)
