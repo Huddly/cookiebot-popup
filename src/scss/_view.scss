@@ -1,0 +1,31 @@
+.hcb-view {
+	&__title {
+		margin: 0;
+		font-size: em-calc(28);
+	}
+
+	&__text {
+		margin: em-calc(8 0 0 0);
+		color: $cb-color-gray;
+	}
+
+	&__footer {
+		@media screen and (max-width: $cb-desktop-breakpoint) {
+			flex-direction: column;
+			align-items: stretch;
+
+			& > * {
+				width: 100%;
+			}
+		}
+
+		display: flex;
+		flex-shrink: 0;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-end;
+		margin-top: $cb-padding;
+		column-gap: em-calc(20);
+		row-gap: em-calc(14);
+	}
+}

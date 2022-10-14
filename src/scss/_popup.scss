@@ -1,0 +1,17 @@
+.hcb-popup {
+	z-index: 9999999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: calc(100% - #{$cb-gutter-width} * 2);
+	max-width: em-calc(600);
+	height: auto;
+	max-height: calc(100% - #{$cb-gutter-width} * 2);
+	padding: $cb-padding;
+	overflow-y: auto;
+	transform: translate(-50%, -50%);
+	border-top: em-calc(1) solid $cb-color-border;
+	background-color: $cb-color-white;
+	box-shadow: 0 0 9999px 9999px rgba($cb-color-black, 0.5);
+	color: $cb-color-black;
+}

@@ -25,14 +25,6 @@ export const slideToggle = (el, duration = 200) => {
 	}
 };
 
-export const showHide = (el, property = 'block') => {
-	if (el.style.display !== 'none') {
-		el.style.display = 'none';
-	} else {
-		el.style.display = property;
-	}
-};
-
 export const setTransition = (el, options) => {
 	const { target, duration, type } = options;
 

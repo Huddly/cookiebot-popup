@@ -33,6 +33,10 @@ class PreviewGeneratorPlugin {
 				while (entryFile.indexOf(cb_key) !== -1) {
 					entryFile = entryFile.replace(cb_key, cb_value);
 				}
+				entryFile = entryFile.replace(/<!--[\s\S]*?-->/g, '');
+				if (entryFile.indexOf('data-development="true"') === -1) {
+					entryFile = entryFile.replace(/id="cookiebanner"/g, 'id="cookiebanner" data-development="true"');
+				}
 			});
 
 			const html = `
@@ -48,7 +52,11 @@ class PreviewGeneratorPlugin {
 	${this.styles.map((style) => `<link rel="stylesheet" href="${style}">`).join('\n')}
 </head>
 <body>
-	<h1>${this.title}</h1>
+	<h1 style="margin: 0;
+		padding: 2rem;
+		background-color: #f5f5f5;
+		font-family: sans-serif;
+		text-align: center;">${this.title}</h1>
 	${entryFile}
 	${this.scripts
 		.map((script) => `<script src="${script}" type="text/javascript" data-cookieconsent="ignore"></script>`)

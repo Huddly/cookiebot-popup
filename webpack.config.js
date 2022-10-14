@@ -13,7 +13,7 @@ module.exports = (env) => {
 			entry,
 			output: {
 				path: path.join(__dirname, outputDir),
-				filename: 'dialog.js',
+				filename: 'popup.js',
 				publicPath: '/dist/',
 			},
 			target: ['web', 'es5'],
@@ -32,19 +32,19 @@ module.exports = (env) => {
 			},
 			plugins: [
 				new MiniCssExtractPlugin({
-					filename: 'dialog.css',
+					filename: 'popup.css',
 				}),
 				new HtmlWebpackPlugin({
 					inject: false,
 					template: 'src/html/app.html',
-					filename: '../dist/dialog.html',
+					filename: '../dist/popup.html',
 				}),
 				new PreviewGeneratorPlugin({
 					template: 'src/html/app.html',
 					filename: '../index.html',
-					title: 'Huddly cookiebot dialog preview',
-					styles: ['/dist/dialog.css', 'https://necolas.github.io/normalize.css/8.0.1/normalize.css'],
-					scripts: ['/dist/dialog.js'],
+					title: 'Huddly cookiebot popup preview',
+					styles: ['/dist/popup.css', 'https://necolas.github.io/normalize.css/8.0.1/normalize.css'],
+					scripts: ['/dist/popup.js'],
 				}),
 			],
 			optimization: {

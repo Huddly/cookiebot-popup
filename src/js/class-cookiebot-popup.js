@@ -11,23 +11,25 @@ export default class CookiebotPopup {
 		const _this = this;
 
 		this.handleMissingHideDetailsLabel();
-		this.setModalHeight();
-
-		window.addEventListener('resize', () => {
-			this.setModalHeight();
-		});
 
 		document.addEventListener('click', (e) => {
 			const { target } = e;
 			if (!target) return;
 
-			// Toggle detail modal
-			if (target.hasAttribute('data-toggle-details-modal')) {
-				showHide(this.detailsModal, 'flex');
-				_this.setModifierClass(this.cookiebanner, 'details-open');
-				const modifierClass = _this.setModifierClass(this.showDetailsLink);
-				_this.setDetailsText(this.showDetailsLink, modifierClass);
-				_this.setAriaState(this.showDetailsLink, modifierClass);
+			// Handle views
+			if (target.hasAttribute('data-hcb-view-anchor')) {
+				const view = target.getAttribute('data-hcb-view-anchor');
+				const viewElements = document.querySelectorAll('[data-hcb-view]');
+
+				viewElements.forEach((el) => {
+					if (el.getAttribute('data-hcb-view') === view) {
+						el.style.display = 'block';
+						el.setAttribute('aria-hidden', 'false');
+					} else {
+						el.style.display = 'none';
+						el.setAttribute('aria-hidden', 'true');
+					}
+				});
 			}
 
 			// Toggle detail accordions
@@ -46,22 +48,6 @@ export default class CookiebotPopup {
 			if (button.innerHTML.indexOf(needle) < 0) return;
 			button.innerText = button.innerText.replace(needle, replacement);
 		});
-	};
-
-	setModalHeight = () => {
-		const winWidth = window.innerWidth;
-		if (winWidth < 1000) {
-			this.detailsModal.style.height = 'auto';
-			return;
-		}
-
-		const winHeight = window.innerHeight;
-		const cookiebannerHeight = this.cookiebanner.clientHeight;
-		const margin = 48;
-		const modalHeight = winHeight - cookiebannerHeight - margin * 2;
-
-		this.detailsModal.style.top = `${margin}px`;
-		this.detailsModal.style.height = `${modalHeight}px`;
 	};
 
 	toggleAccordion = (el) => {

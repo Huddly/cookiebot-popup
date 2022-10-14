@@ -1,31 +1,9 @@
 .hcb-details {
-	@media screen and (min-width: $cb-desktop-breakpoint) {
-		@include gutter(true);
-		position: fixed;
-		top: 0;
-		left: 50%;
-		max-width: em-calc(652);
-		padding: em-calc(32 38);
-		transform: translateX(-50%);
-	}
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	background-color: $cb-color-white;
-
 	&__header {
-		@media screen and (min-width: $cb-desktop-breakpoint) {
-			display: flex;
-		}
-		display: none;
+		display: flex;
 		align-items: baseline;
 		justify-content: space-between;
 		margin-bottom: em-calc(32);
-
-		&__title {
-			margin: 0;
-			font-size: em-calc(28);
-		}
 	}
 
 	&__content {
@@ -60,13 +38,15 @@
 			}
 
 			&__title {
-				margin-top: 0;
+				margin: 0;
 				font-size: em-calc(18);
+				font-weight: 600;
 			}
 
 			&__text {
 				grid-column: 1 / span 2;
 				margin: 0;
+				margin-top: em-calc(12);
 				font-size: em-calc(15);
 			}
 
@@ -97,12 +77,5 @@
 				vertical-align: top;
 			}
 		}
-	}
-
-	&__footer {
-		@media screen and (min-width: $cb-desktop-breakpoint) {
-			display: block;
-		}
-		display: none;
 	}
 }

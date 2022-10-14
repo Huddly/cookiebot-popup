@@ -2,7 +2,7 @@
 	"name": "@huddly/cookiebot-dialog",
 	"version": "1.0.5",
 	"description": "A custom dialog for cookiebot",
-	"main": "dist/dialog.js",
+	"main": "dist/popup.js",
 	"author": "Huddly AS",
 	"repository": {
 		"type": "git",
@@ -13,8 +13,7 @@
 		"registry": "https://registry.npmjs.org/"
 	},
 	"scripts": {
-		"dev": "cross-env NODE_ENV=development run",
-		"watch": "webpack --watch --mode=development",
+		"dev": "webpack --watch --mode=development",
 		"build": "webpack --mode=production",
 		"build:dev": "webpack --mode=development",
 		"prepare": "npm run build"
