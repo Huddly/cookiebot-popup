@@ -29,7 +29,7 @@
 	}
 }
 
-body:has(#cookiebanner):not(#cookiebanner[style*='display: none']) {
+body:has(#cookiebanner[style*='display: block']) {
 	overflow: hidden;
 	pointer-events: none;
 }
