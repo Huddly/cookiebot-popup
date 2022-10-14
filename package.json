@@ -1,12 +1,12 @@
 {
-	"name": "@huddly/cookiebot-dialog",
-	"version": "1.0.5",
-	"description": "A custom dialog for cookiebot",
+	"name": "@huddly/cookiebot-popup",
+	"version": "1.0.0",
+	"description": "A custom popup for cookiebot",
 	"main": "dist/popup.js",
 	"author": "Huddly AS",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/huddly/cookiebot-dialog.git"
+		"url": "git+https://github.com/huddly/cookiebot-popup.git"
 	},
 	"publishConfig": {
 		"access": "restricted",
