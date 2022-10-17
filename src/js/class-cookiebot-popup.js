@@ -32,8 +32,15 @@ export default class CookiebotPopup {
 				});
 			}
 
+			// Handle triggers, these are buttons that clicks the id of the attribute
+			if (target.hasAttribute('data-hcb-trigger')) {
+				const id = target.getAttribute('data-hcb-trigger');
+				const el = document.getElementById(id);
+				if (el) el.click();
+			}
+
 			// Toggle detail accordions
-			if (target.hasAttribute('data-accordion-toggle')) {
+			if (target.hasAttribute('data-hcb-accordion-toggle')) {
 				_this.toggleAccordion(target);
 				const modifierClass = _this.setModifierClass(target);
 				_this.setAriaState(target, modifierClass);
@@ -51,8 +58,8 @@ export default class CookiebotPopup {
 	};
 
 	toggleAccordion = (el) => {
-		const id = el.getAttribute('data-accordion-toggle');
-		const accordionContent = document.querySelector(`[data-accordion="${id}"]`);
+		const id = el.getAttribute('data-hcb-accordion-toggle');
+		const accordionContent = document.querySelector(`[data-hcb-accordion="${id}"]`);
 		return slideToggle(accordionContent);
 	};
 
