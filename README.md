@@ -23,4 +23,4 @@ Paste the content of these into your cookiebot popup setting fields after select
 
 After this, your Cookiebot popup should look like this:
 
-![Huddly version of the Cookiebot popup](https://user-images.githubusercontent.com/25268506/194106265-a51c0c4a-f571-4d16-b4ee-6c6822f00da2.png)
+![Huddly version of the Cookiebot popup](https://user-images.githubusercontent.com/25268506/196160795-22576a0e-61df-42da-9f40-ea156da5f057.png)
